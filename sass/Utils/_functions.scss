@@ -1,0 +1,4 @@
+@function box-shadow($color) {
+    $box-shadow: 0 5px 5px $shadow-color1;
+    @return $box-shadow;
+}

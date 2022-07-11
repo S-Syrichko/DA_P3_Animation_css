@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+
+$font-content: 'Roboto', sans-serif;
+$font-header: 'Shrikhand', sans-serif;
+
+header, body, footer {
+    font-family: $font-content;
+    color: black;
+    a {
+        color: black;   
+    }
+}
