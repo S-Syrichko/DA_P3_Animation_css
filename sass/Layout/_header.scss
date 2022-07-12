@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    z-index: 1;
+    box-shadow: box-shadow($color-primary);
+    .logo {
+      object-fit: cover;
+      width: 50%;
+      height: auto;
+    }
+  }

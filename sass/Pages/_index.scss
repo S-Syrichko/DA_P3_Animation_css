@@ -1,0 +1,112 @@
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    color: $font-color1;
+    background-color: $background-color1;
+    padding: 1rem;
+    i {
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  }
+  
+  .banner {
+    @include flex-column-nowrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10% 5%;
+    background-color: $background-color2;
+    &__header {
+      font-size: 1.8rem;
+      font-weight: bold;
+      width: 90%;
+      margin-bottom: 1.5rem;
+    }
+    &__content {
+      font-size: 1.2rem;
+      color: $font-color2;
+      margin-bottom: 3rem;
+    }
+    &__explore {
+      padding: 1.2rem;
+      font-size: 1.1rem;
+      color: white;
+      background: linear-gradient($color-secondary, $color-primary);
+      box-shadow: box-shadow($shadow-color1);
+      border-radius: 2em;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .instructions {
+    @include flex-column-nowrap;
+    &__header {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 2rem 5%;
+    }
+    &__list {
+      align-self: center;
+      counter-reset: ol-counter;
+      li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem 2rem 1rem 0.5rem;
+        background-color: $background-color2;
+        box-shadow: box-shadow($shadow-color1);
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        counter-increment: ol-counter;
+        &::before {
+          content: counter(ol-counter);
+          color: white;
+          width: 1.7rem;
+          height: 1.7rem;
+          text-align: center;
+          font-size: 1rem;
+          padding: 0.5rem;
+          border-radius: 50%;
+          background: $color-primary;
+          transform: translateX(-1.5rem);
+        }
+        i {
+          font-size: 1.3rem;
+          margin-right: 1rem;
+          color: $font-color2;
+        }
+        p {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+        &:nth-child(3) {
+          background-color: $background-color3;
+          i {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  .restaurant {
+    @include flex-column-nowrap;
+    align-items: center;
+    background-color: $background-color2;
+    &__header {
+      align-self: flex-start;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 2rem 5%;
+    }
+    &__restaurant-list {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  }

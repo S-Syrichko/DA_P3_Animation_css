@@ -1,0 +1,22 @@
+footer {
+    padding: 10%;
+    background-color: $background-color4;
+    .logo {
+      object-fit: cover;
+      width: 40%;
+      filter: invert(100%);
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .footer__list {
+      &__link {
+        color: white;
+        display: flex;
+        width: 70%;
+        margin-bottom: 1rem;
+        i {
+          width: 15%;
+        }
+      }
+    }
+  }

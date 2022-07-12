@@ -1,0 +1,42 @@
+.card {
+  @include flex-column-nowrap;
+  padding: 0;
+  margin: 0 5px 40px 5px;
+  width: 310px;
+  height: 250px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px rgb(222, 220, 220);
+
+  img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    flex: 1 1 0%;
+    border-radius: 25px 25px 0 0;
+  }
+  &__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__content {
+      width: 70%;
+      padding: 1rem;
+      h3 {
+        font-size: 1.1rem;
+        font-weight: $roboto-bolder;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        color: $font-color2;
+      }
+    }
+    i {
+      width: 20%;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+}
