@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <link rel="icon" href="./b-solid.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -17,6 +17,11 @@
   </head>
   <body>
     <header>
+      <nav>
+        <a href="index.html">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </nav>
       <img
         src="./public/img/logo/ohmyfood.png"
         alt="Logo Ohmyfood"
@@ -34,107 +39,137 @@
       <div class="menu">
         <div class="menu__header">
           <h1>Le délice des sens</h1>
-          <i class="far fa-heart"></i>
+          <button class="heart-btn">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
+          </button>
         </div>
         <ul class="menu__meals-list">
           <li>
-            <h2>Entrées</h2>
+            <h2><em>Entr</em>ées</h2>
             <ul class="menu__meals-list__selection">
               <li>
-                <a href="#" class="menu__item">
-                  <div class="menu__item__content">
+                <button class="meal meal-1">
+                  <div class="meal__content">
                     <h3>Tartares de thon</h3>
                     <p>Assaisonné au yuzu</p>
                   </div>
-                  <p class="menu__item__price">25€</p>
-                </a>
+                  <p class="meal__price">25€</p>
+                  <div class="meal__check">
+                    <i class="fas fa-circle-check"></i>
+                  </div>
+                </button>
               </li>
               <li>
-                <a href="#" class="menu__item">
-                  <div class="menu__item__content">
+                <button class="meal meal-2">
+                  <div class="meal__content">
                     <h3>Bouchée de homard croustillant</h3>
                     <p>Et sa farandole de petits légumes</p>
                   </div>
-                  <p class="menu__item__price">35€</p>
-                </a>
+                  <p class="meal__price">35€</p>
+                  <div class="meal__check">
+                    <i class="fas fa-circle-check"></i>
+                  </div>
+                </button>
               </li>
               <li>
-                <a href="#" class="menu__item">
-                  <div class="menu__item__content">
+                <button class="meal meal-3">
+                  <div class="meal__content">
                     <h3>Velouté de cèpes</h3>
                     <p>Aux truffes</p>
                   </div>
-                  <p class="menu__item__price">20€</p>
-                </a>
+                  <p class="meal__price">20€</p>
+                  <div class="meal__check">
+                    <i class="fas fa-circle-check"></i>
+                  </div>
+                </button>
               </li>
             </ul>
           </li>
           <li>
-            <h2>Plats</h2>
+            <h2><em>Plat</em>s</h2>
             <ul class="menu__meals-list__selection">
               <li>
-                <a href="#" class="menu__item">
-                  <div class="menu__item__content">
+                <button class="meal meal-1">
+                  <div class="meal__content">
                     <h3>Poulet rôti aux herbes de Provence</h3>
                     <p>Et sa crème de truffe</p>
                   </div>
-                  <p class="menu__item__price">40€</p>
-                </a>
+                  <p class="meal__price">40€</p>
+                  <div class="meal__check">
+                    <i class="fas fa-circle-check"></i>
+                  </div>
+                </button>
               </li>
               <li>
-                <a href="#" class="menu__item">
-                  <div class="menu__item__content">
+                <button class="meal meal-2">
+                  <div class="meal__content">
                     <h3>Langouste rôtie</h3>
                     <p>Et ses légumes de saison</p>
                   </div>
-                  <p class="menu__item__price">35€</p>
-                </a>
+                  <p class="meal__price">35€</p>
+                  <div class="meal__check">
+                    <i class="fas fa-circle-check"></i>
+                  </div>
+                </button>
               </li>
               <li>
-                <a href="#" class="menu__item">
-                  <div class="menu__item__content">
+                <button class="meal meal-3">
+                  <div class="meal__content">
                     <h3>Côte de boeuf Angus</h3>
                     <p>Et sa purée de panais</p>
                   </div>
-                  <p class="menu__item__price">44€</p>
-                </a>
+                  <p class="meal__price">44€</p>
+                  <div class="meal__check">
+                    <i class="fas fa-circle-check"></i>
+                  </div>
+                </button>
               </li>
             </ul>
           </li>
           <li>
-            <h2>Desserts</h2>
+            <h2><em>Dess</em>erts</h2>
             <ul class="menu__meals-list__selection">
               <li>
-                <a href="#" class="menu__item">
-                  <div class="menu__item__content">
+                <button class="meal meal-1">
+                  <div class="meal__content">
                     <h3>Farandole de desserts</h3>
                     <p>Du chef</p>
                   </div>
-                  <p class="menu__item__price">18€</p>
-                </a>
+                  <p class="meal__price">18€</p>
+                  <div class="meal__check">
+                    <i class="fas fa-circle-check"></i>
+                  </div>
+                </button>
               </li>
               <li>
-                <a href="#" class="menu__item">
-                  <div class="menu__item__content">
+                <button class="meal meal-2">
+                  <div class="meal__content">
                     <h3>Crème brulée</h3>
                     <p>Revisitée</p>
                   </div>
-                  <p class="menu__item__price">22€</p>
-                </a>
+                  <p class="meal__price">22€</p>
+                  <div class="meal__check">
+                    <i class="fas fa-circle-check"></i>
+                  </div>
+                </button>
               </li>
               <li>
-                <a href="#" class="menu__item">
-                  <div class="menu__item__content">
+                <button class="meal meal-3">
+                  <div class="meal__content">
                     <h3>Tiramisu</h3>
                     <p>À la noisette</p>
                   </div>
-                  <p class="menu__item__price">23€</p>
-                </a>
+                  <p class="meal__price">23€</p>
+                  <div class="meal__check">
+                    <i class="fas fa-circle-check"></i>
+                  </div>
+                </button>
               </li>
             </ul>
           </li>
         </ul>
-        <a href="#" class="menu__order">Commander</a>
+        <a href="#" class="main-btn">Commander</a>
       </div>
     </main>
     <footer>
@@ -145,24 +180,24 @@
       />
       <ul class="footer__list">
         <li>
-          <a href="#" class="footer__link">
-            <i class="fas fa-ustensils"></i>
+          <a href="#" class="footer__list__link">
+            <i class="fas fa-cutlery"></i>
             <p>Proposer un restaurant</p>
           </a>
         </li>
         <li>
-          <a href="#" class="footer__link">
+          <a href="#" class="footer__list__link">
             <i class="fas fa-handshake-angle"></i>
             <p>Devenir partenaire</p>
           </a>
         </li>
         <li>
-          <a href="#" class="footer__link">
+          <a href="#" class="footer__list__link">
             <p>Mentions légales</p>
           </a>
         </li>
         <li>
-          <a href="#" class="footer__link">
+          <a href="mailto:s-syrichko@protonmail.com" class="footer__list__link">
             <p>Contact</p>
           </a>
         </li>

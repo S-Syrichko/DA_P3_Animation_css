@@ -1,0 +1,73 @@
+.meal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: relative;
+  width: 100%;
+  border: none;
+  margin-bottom: 1rem;
+  background-color: white;
+  box-shadow: box-shadow($background-color1);
+  border-radius: 15px;
+  padding: 0;
+  animation: meal-loading 400ms both ease-in-out;
+  @for $i from 1 through 5 {
+    &-#{$i} {
+      animation-delay: 150ms * $i;
+    }
+  }
+  &__content {
+    text-align: start;
+    padding: 1rem 0 1rem 1rem;
+    min-width: 60%;
+    max-width: 85%;
+    flex: 1 2 0%;
+    h3 {
+      @include text-nowrap;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: .5rem;
+    }
+    p {
+      @include text-nowrap;
+      font-size: 0.9rem;
+      color: $font-color2;
+    }
+  }
+  &__price {
+    min-width: 10%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    align-self: flex-end;
+    font-weight: bold;
+  }
+  &__check {
+    width: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+    height: 100%;
+    background-color: $color-tertiary;
+    border-radius: 0 15px 15px 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: width $transdur-meal-after ease-in-out, transform $transdur-meal-after ease-in-out;
+    
+  }
+  .fas {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+  }
+
+  &:hover > .meal__check {
+    width: 20%;
+    transform: scaleX(1);
+    transition: width $transdur-meal ease-in-out, transform $transdur-meal ease-in-out;
+    .fas {
+      animation: meal-checked $transdur-meal ease-in-out both;
+    }
+  }
+}

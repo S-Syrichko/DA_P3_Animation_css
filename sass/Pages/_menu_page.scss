@@ -1,0 +1,38 @@
+.menu {
+    @include flex-column-nowrap;
+    z-index: 2;
+    border-radius: 2rem;
+    background-color: $background-color2;
+    position: relative;
+    top: -3rem;
+    &__header {
+        padding: 10% 5%;
+        margin: 0 .5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            font-family: $font-header;
+            font-size: 1.7rem;
+            width: 80%;
+        }
+    }
+    &__meals-list {
+      @include flex-column-nowrap;
+      justify-content: space-around;
+      padding: 0 5%;
+      h2 {
+        text-transform: uppercase;
+        color: $font-color2;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        em {
+          padding: .3rem 0;
+          border-bottom: solid .2rem $color-tertiary;
+        }
+      }
+      &__selection {
+        margin-bottom: 3rem;
+      }  
+    }
+}

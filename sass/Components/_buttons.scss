@@ -1,0 +1,57 @@
+.main-btn {
+  align-self: center;
+  width: fit-content;
+  padding: 5% 10%;
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient($color-secondary, $color-primary);
+  box-shadow: box-shadow($shadow-color1);
+  border-radius: 2rem;
+  border: 0;
+  margin-bottom: 3rem;
+  &:hover {
+    background: linear-gradient(lighten($color-secondary, 3%), lighten($color-primary, 3%));
+    box-shadow: box-shadow(darken($shadow-color1, 35%));
+  }
+}
+
+.heart-btn {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  border: 0;
+  padding: 0;
+  margin-right: 1rem;
+  background-color: inherit;
+  cursor: pointer;
+  .far,
+  .fas {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    font-size: 1.5rem;
+  }
+  .far {
+    z-index: 2;
+    opacity: 1;
+  }
+  .fas {
+    color: transparent;
+    background-image: linear-gradient(
+      to right,
+      $color-secondary,
+      $color-primary
+    );
+    -webkit-background-clip: text;
+    z-index: 1;
+    opacity: 0;
+  }
+  &:hover {
+    .far {
+      animation: heart-filling 300ms both reverse ease-in-out;
+    }
+    .fas {
+      animation: heart-filling 500ms both ease-in-out;
+    }
+  }
+}

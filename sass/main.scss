@@ -4,14 +4,14 @@
 @import "./Utils/variables";
 @import "./Utils/functions";
 @import "./Utils/mixins";
+@import "./Components/buttons";
 @import "./Components/card";
+@import "./Components/meal";
 @import "./Layout/header";
-@import "./Layout/nav";
+@import "./Layout/banner";
 @import "./Layout/footer";
 @import "./Pages/index";
-@import "./Pages/menu_delight";
-@import "./Pages/menu_enchanted";
-@import "./Pages/menu_french";
-@import "./Pages/menu_taste";
+@import "./Pages/menu_page";
+@import "./Utils/keyframes";
 
 

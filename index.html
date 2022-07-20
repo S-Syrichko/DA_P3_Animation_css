@@ -33,7 +33,7 @@
         <p class="banner__content">
           Découvrez des restaurants d'exception, séléctionnés par nos soins
         </p>
-        <a href="#" class="banner__explore">Explorer nos restaurants</a>
+        <a href="#restaurant" class="main-btn">Explorer nos restaurants</a>
       </section>
       <section class="instructions">
         <h2 class="instructions__header">Fonctionnement</h2>
@@ -52,61 +52,81 @@
           </li>
         </ol>
       </section>
-      <section class="restaurant">
+      <section class="restaurant" id="restaurant">
         <h2 class="restaurant__header">Restaurants</h2>
         <nav class="restaurant__list">
-            <a href="menu_taste.html" class="card">
-              <img
+            <div class="card">
+              <a href="menu_taste.html">
+                <img class="card__img"
                 src="./public/img/restaurants/restaurant_taste.jpg"
                 alt="Assiette La palette du goût"
-              />
+                />
+              </a>
               <div class="card__desc">
                 <div class="card__desc__content">
                   <h3>La palette du goût</h3>
                   <p>Ménimontant</p>
                 </div>
-                <i class="far fa-heart"></i>
+                <button class="heart-btn">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </button>
               </div>
-            </a>
-            <a href="menu_enchanted.html" class="card">
-              <img
+            </div>
+            <div class="card">
+              <a href="menu_enchanted.html">
+                <img
                 src="./public/img/restaurants/restaurant_enchanted.jpg"
                 alt="Assiette La note enchantée"
-              />
+                />
+              </a>
               <div class="card__desc">
                 <div class="card__desc__content">
                   <h3>La note enchantée</h3>
                   <p>Charonne</p>
                 </div>
-                <i class="far fa-heart"></i>
+                <button class="heart-btn">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </button>
               </div>
-            </a>
-            <a href="menu_french.html" class="card">
-              <img
+            </div>
+            <div class="card">
+              <a href="menu_french.html">
+                <img
                 src="./public/img/restaurants/restaurant_french.jpg"
                 alt="Assiette À la française"
-              />
+                />
+              </a>
               <div class="card__desc">
                 <div class="card__desc__content">
                   <h3>À la française</h3>
                   <p>Cité Rouge</p>
                 </div>
-                <i class="far fa-heart"></i>
+                <button class="heart-btn">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </button>
               </div>
-            </a>
-            <a href="menu_delight.html" class="card">
-              <img
+            </div>
+            <div class="card">
+              <a href="menu_delight.html">
+                <img
                 src="./public/img/restaurants/restaurant_delight.jpg"
                 alt="Assiette Le délice des sens"
-              />
+                />
+              </a>
               <div class="card__desc">
                 <div class="card__desc__content">
                   <h3>Le délice des sens</h3>
                   <p>Folie-Méricourt</p>
                 </div>
-                <i class="far fa-heart"></i>
+                <button class="heart-btn">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </button>
               </div>
-            </a>
+            </div>
           </nav>
       </section>
     </main>
@@ -131,7 +151,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="footer__list__link">
+                <a href="mailto:s-syrichko@protonmail.com" class="footer__list__link">
                     <p>Contact</p>
                 </a>
             </li>
