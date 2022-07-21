@@ -1,11 +1,10 @@
-
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
 
 $font-color1: #3d3b3b;
 $font-color2: #7e7d7d;
-$background-color1: #EAEAEA;
+$background-color1: #eaeaea;
 $background-color2: #f6f6f6;
 $background-color3: #f5edff;
 $background-color4: #404344;
@@ -14,3 +13,8 @@ $roboto-bolder: 900;
 
 $transdur-meal: 400ms;
 $transdur-meal-after: 600ms;
+
+$breakpoints: (
+  tablet: 641px,
+  desktop: 1025px,
+);

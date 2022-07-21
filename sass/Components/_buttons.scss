@@ -1,7 +1,9 @@
+
+
 .main-btn {
   align-self: center;
   width: fit-content;
-  padding: 5% 10%;
+  padding: 1rem 2rem;
   font-size: 1rem;
   color: white;
   background: linear-gradient($color-secondary, $color-primary);
@@ -14,7 +16,6 @@
     box-shadow: box-shadow(darken($shadow-color1, 35%));
   }
 }
-
 .heart-btn {
   width: 2rem;
   height: 2rem;
@@ -42,16 +43,16 @@
       $color-secondary,
       $color-primary
     );
-    -webkit-background-clip: text;
+    clip-path: circle(0%);
+    background-clip: text;
     z-index: 1;
-    opacity: 0;
   }
   &:hover {
     .far {
-      animation: heart-filling 300ms both reverse ease-in-out;
+      animation: heart-opacity 500ms both ease-in-out;
     }
     .fas {
-      animation: heart-filling 500ms both ease-in-out;
+      animation: heart-scale 800ms both ease-in-out;
     }
   }
 }

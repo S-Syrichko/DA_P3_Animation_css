@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded",
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+    "index": "sass --watch ./sass/index.scss:./public/css/index.css --style compressed",
+    "index_prefix": "postcss ./public/css/index.css --use autoprefixer -d ./public/css/prefixed/",
+    "menu": "sass --watch ./sass/menu.scss:./public/css/menu.css --style compressed",
+    "menu_prefix": "postcss ./public/css/menu.css --use autoprefixer -d ./public/css/prefixed/",
+    "sass": "concurrently --kill-others \"npm run index\" \"npm run menu\"",
+    "prefix": "concurrently \"npm run index_prefix\" \"npm run menu_prefix\""
   },
   "author": "",
   "license": "ISC",
   "browserslist": "last 4 versions",
   "dependencies": {
     "sass": "^1.53.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0"
   }
 }

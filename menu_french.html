@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="./public/css/style.css" />
-    <link rel="icon" href="./b-solid.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./public/css/prefixed/menu.css" />
+    <link rel="icon" href="./utensils-solid.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -36,20 +36,20 @@
           class="banner__img"
         />
       </div>
-      <div class="menu">
+      <section class="menu">
         <div class="menu__header">
           <h1>À la française</h1>
-          <button class="heart-btn">
+          <div class="heart-btn">
             <i class="far fa-heart"></i>
             <i class="fas fa-heart"></i>
-          </button>
+          </div>
         </div>
         <ul class="menu__meals-list">
           <li>
             <h2><em>Entr</em>ées</h2>
             <ul class="menu__meals-list__selection">
               <li>
-                <button class="meal meal-1">
+                <div class="meal meal-1">
                   <div class="meal__content">
                     <h3>Tartare de poulpe acidulé</h3>
                     <p>Aux zestes d'orange</p>
@@ -58,10 +58,10 @@
                   <div class="meal__check">
                     <i class="fas fa-circle-check"></i>
                   </div>
-                </button>
+                </div>
               </li>
               <li>
-                <button class="meal meal-2">
+                <div class="meal meal-2">
                   <div class="meal__content">
                     <h3>Velouté de légumes d'antan</h3>
                     <p>Carotte, panais, topinambour</p>
@@ -70,10 +70,10 @@
                   <div class="meal__check">
                     <i class="fas fa-circle-check"></i>
                   </div>
-                </button>
+                </div>
               </li>
               <li>
-                <button class="meal meal-3">
+                <div class="meal meal-3">
                   <div class="meal__content">
                     <h3>Soupe à l'oignon</h3>
                     <p>Revisitée</p>
@@ -82,7 +82,7 @@
                   <div class="meal__check">
                     <i class="fas fa-circle-check"></i>
                   </div>
-                </button>
+                </div>
               </li>
             </ul>
           </li>
@@ -90,7 +90,7 @@
             <h2><em>Plat</em>s</h2>
             <ul class="menu__meals-list__selection">
               <li>
-                <button class="meal meal-1">
+                <div class="meal meal-1">
                   <div class="meal__content">
                     <h3>Coquilles Saint-Jacques</h3>
                     <p>Accompagnées d'une purée de panais</p>
@@ -99,10 +99,10 @@
                   <div class="meal__check">
                     <i class="fas fa-circle-check"></i>
                   </div>
-                </button>
+                </div>
               </li>
               <li>
-                <button class="meal meal-2">
+                <div class="meal meal-2">
                   <div class="meal__content">
                     <h3>Magret de canard</h3>
                     <p>Et parmentier de pommes de terre</p>
@@ -111,10 +111,10 @@
                   <div class="meal__check">
                     <i class="fas fa-circle-check"></i>
                   </div>
-                </button>
+                </div>
               </li>
               <li>
-                <button class="meal meal-3">
+                <div class="meal meal-3">
                   <div class="meal__content">
                     <h3>Pigeonneau d’Ille-et-Vilaine</h3>
                     <p>Sur son lit de gnocchis aux légumes</p>
@@ -123,7 +123,7 @@
                   <div class="meal__check">
                     <i class="fas fa-circle-check"></i>
                   </div>
-                </button>
+                </div>
               </li>
             </ul>
           </li>
@@ -131,7 +131,7 @@
             <h2><em>Dess</em>erts</h2>
             <ul class="menu__meals-list__selection">
               <li>
-                <button class="meal meal-1">
+                <div class="meal meal-1">
                   <div class="meal__content">
                     <h3>Pétales de violettes glacés</h3>
                     <p>Et purée de noisettes</p>
@@ -140,10 +140,10 @@
                   <div class="meal__check">
                     <i class="fas fa-circle-check"></i>
                   </div>
-                </button>
+                </div>
               </li>
               <li>
-                <button class="meal meal-2">
+                <div class="meal meal-2">
                   <div class="meal__content">
                     <h3>Fondant au chocolat</h3>
                     <p>Revisité</p>
@@ -152,10 +152,10 @@
                   <div class="meal__check">
                     <i class="fas fa-circle-check"></i>
                   </div>
-                </button>
+                </div>
               </li>
               <li>
-                <button class="meal meal-3">
+                <div class="meal meal-3">
                   <div class="meal__content">
                     <h3>Millefeuille croustillant</h3>
                     <p>Myrtilles et pâte d’amande</p>
@@ -164,13 +164,13 @@
                   <div class="meal__check">
                     <i class="fas fa-circle-check"></i>
                   </div>
-                </button>
+                </div>
               </li>
             </ul>
           </li>
         </ul>
         <a href="#" class="main-btn">Commander</a>
-      </div>
+      </section>
     </main>
     <footer>
       <img

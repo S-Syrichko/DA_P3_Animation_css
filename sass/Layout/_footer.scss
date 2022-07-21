@@ -1,9 +1,9 @@
 footer {
-    padding: 10%;
+    padding: 2rem;
     background-color: $background-color4;
     .logo {
       object-fit: cover;
-      width: 40%;
+      width: 10rem;
       filter: invert(100%);
       height: auto;
       margin-bottom: 1rem;
@@ -15,8 +15,11 @@ footer {
         width: 70%;
         margin-bottom: 1rem;
         i {
-          width: 15%;
+          width: 2rem;
         }
       }
+    }
+    @include display-desktop{
+      box-shadow: box-shadow($shadow-color1);
     }
   }

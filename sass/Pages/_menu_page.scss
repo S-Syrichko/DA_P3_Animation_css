@@ -1,38 +1,65 @@
 .menu {
-    @include flex-column-nowrap;
-    z-index: 2;
-    border-radius: 2rem;
-    background-color: $background-color2;
-    position: relative;
-    top: -3rem;
-    &__header {
-        padding: 10% 5%;
-        margin: 0 .5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        h1 {
-            font-family: $font-header;
-            font-size: 1.7rem;
-            width: 80%;
-        }
+  @include flex-column-nowrap;
+  z-index: 2;
+  border-radius: 2rem 2rem 0 0;
+  background-color: $background-color2;
+  position: relative;
+  margin-top: -3rem;
+  &__header {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 0 0.5rem;
+    h1 {
+      font-family: $font-header;
+      font-size: 1.7rem;
     }
-    &__meals-list {
-      @include flex-column-nowrap;
-      justify-content: space-around;
-      padding: 0 5%;
+    @include display-desktop {
+      width: 60%;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+  &__meals-list {
+    @include flex-column-nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+    li {
+      width: 100%;
       h2 {
+        width: 20%;
+        text-align: center;
         text-transform: uppercase;
         color: $font-color2;
         font-size: 1rem;
         margin-bottom: 1.5rem;
         em {
-          padding: .3rem 0;
-          border-bottom: solid .2rem $color-tertiary;
+          padding: 0.3rem 0;
+          border-bottom: solid 0.2rem $color-tertiary;
         }
       }
-      &__selection {
-        margin-bottom: 3rem;
-      }  
     }
+    &__selection {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-around;
+      margin-bottom: 3rem;
+      li {
+        display: flex;
+        justify-content: center;
+        @include display-tablet {
+          width: 50%;
+        }
+        @include display-desktop {
+          width: 33%;
+        }
+      }
+    }
+  }
 }

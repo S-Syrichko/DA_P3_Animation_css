@@ -1,81 +1,99 @@
 .location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $font-color1;
-    background-color: $background-color1;
-    padding: .5rem;
-    i {
-      font-size: 1.1rem;
-      padding: 0.5rem 1rem;
-    }
-    p {
-      font-size: 1.1rem;
-      font-weight: bold;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $font-color1;
+  background-color: $background-color1;
+  padding: 0.5rem;
+  i {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
   }
-  .instructions {
-    @include flex-column-nowrap;
-    &__header {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 2rem 5%;
-    }
-    &__list {
-      align-self: center;
-      counter-reset: ol-counter;
-      li {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 1rem 2rem 1rem 0.5rem;
-        background-color: $background-color2;
-        box-shadow: box-shadow($shadow-color1);
-        border-radius: 1rem;
-        margin-bottom: 2rem;
-        counter-increment: ol-counter;
-        &::before {
-          content: counter(ol-counter);
-          color: white;
-          width: 1.7rem;
-          height: 1.7rem;
-          text-align: center;
-          font-size: 1rem;
-          padding: 0.5rem;
-          border-radius: 50%;
-          background: $color-primary;
-          transform: translateX(-1.5rem);
-        }
+  p {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}
+.instructions {
+  @include flex-column-nowrap;
+  padding: 1rem 0;
+  position: relative;
+  &__header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 5%;
+  }
+  &__list {
+    align-self: center;
+    counter-reset: ol-counter;
+    li {
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem 1rem 0.5rem;
+      margin: 0 1rem 2rem 1rem;
+      border-radius: 1rem;
+      background-color: $background-color2;
+      box-shadow: box-shadow($shadow-color1);
+      counter-increment: ol-counter;
+      &::before {
+        content: counter(ol-counter);
+        color: white;
+        width: 1.7rem;
+        height: 1.7rem;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.5rem;
+        border-radius: 50%;
+        background: $color-primary;
+        transform: translateX(-1.5rem);
+      }
+      i {
+        font-size: 1.3rem;
+        margin-right: 1rem;
+        color: $font-color2;
+      }
+      p {
+        font-weight: bold;
+      }
+      &:hover {
+        background-color: $background-color3;
         i {
-          font-size: 1.3rem;
-          margin-right: 1rem;
-          color: $font-color2;
-        }
-        p {
-          font-size: 1rem;
-          font-weight: bold;
-        }
-        &:nth-child(3) {
-          background-color: $background-color3;
-          i {
-            color: $color-primary;
-          }
+          color: $color-primary;
         }
       }
     }
   }
-  .restaurant {
-    @include flex-column-nowrap;
-    align-items: center;
-    background-color: $background-color2;
-    &__header {
-      align-self: flex-start;
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 2rem 5%;
-    }
-    &__restaurant-list {
+  @include display-desktop {
+    &__list {
       display: flex;
-      flex-flow: column nowrap;
+      justify-content: space-evenly;
     }
   }
+}
+.restaurant {
+  padding-top: 1rem;
+  background-color: $background-color2;
+  &__header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 5%;
+  }
+  &__list {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  @include display-tablet {
+    &__list {
+      padding: 0 1rem;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-content: space-between;
+    }
+  }
+  @include display-desktop {
+    border-radius: 2rem 2rem 0 0;
+    box-shadow: box-shadow($shadow-color1);
+    
+  }
+}

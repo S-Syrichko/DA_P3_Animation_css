@@ -5,8 +5,9 @@
   height: 70px;
   position: relative;
   width: 100%;
+  max-width: 600px;
   border: none;
-  margin-bottom: 1rem;
+  margin: .5rem;
   background-color: white;
   box-shadow: box-shadow($background-color1);
   border-radius: 15px;
@@ -37,7 +38,7 @@
   }
   &__price {
     min-width: 10%;
-    padding: 0.5rem;
+    padding: 0 1rem .5rem .5rem;
     font-size: 1.1rem;
     align-self: flex-end;
     font-weight: bold;

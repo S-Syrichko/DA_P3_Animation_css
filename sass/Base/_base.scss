@@ -1,0 +1,5 @@
+body {
+    @include display-desktop{
+        margin: 0 15%;
+    }
+}

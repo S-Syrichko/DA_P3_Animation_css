@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="./public/css/style.css" />
-    <link rel="icon" href="./b-solid.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./public/css/prefixed/index.css" />
+    <link rel="icon" href="./utensils-solid.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -24,10 +24,10 @@
       />
     </header>
     <main>
-      <section class="location">
+      <div class="location">
         <i class="fas fa-location-dot"></i>
         <p class="location__content">Paris, Belleville</p>
-      </section>
+      </div>
       <section class="banner">
         <h1 class="banner__header">Réservez le menu qui vous convient</h1>
         <p class="banner__content">
@@ -50,112 +50,120 @@
             <i class="fas fa-store"></i>
             <p>Dégustez au restaurant</p>
           </li>
-        </ol>
+        </ul>
       </section>
       <section class="restaurant" id="restaurant">
         <h2 class="restaurant__header">Restaurants</h2>
         <nav class="restaurant__list">
-            <div class="card">
-              <a href="menu_taste.html">
-                <img class="card__img"
-                src="./public/img/restaurants/restaurant_taste.jpg"
-                alt="Assiette La palette du goût"
-                />
-              </a>
-              <div class="card__desc">
-                <div class="card__desc__content">
-                  <h3>La palette du goût</h3>
-                  <p>Ménimontant</p>
-                </div>
-                <button class="heart-btn">
-                  <i class="far fa-heart"></i>
-                  <i class="fas fa-heart"></i>
-                </button>
+          <a href="menu_taste.html" class="card">
+            <img
+              class="card__img"
+              src="./public/img/restaurants/restaurant_taste.jpg"
+              alt="Assiette La palette du goût"
+            />
+            <div class="card__desc">
+              <div class="card__desc__content">
+                <h3>La palette du goût</h3>
+                <p>Ménimontant</p>
+              </div>
+              <div class="heart-btn">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
               </div>
             </div>
-            <div class="card">
-              <a href="menu_enchanted.html">
-                <img
-                src="./public/img/restaurants/restaurant_enchanted.jpg"
-                alt="Assiette La note enchantée"
-                />
-              </a>
-              <div class="card__desc">
-                <div class="card__desc__content">
-                  <h3>La note enchantée</h3>
-                  <p>Charonne</p>
-                </div>
-                <button class="heart-btn">
-                  <i class="far fa-heart"></i>
-                  <i class="fas fa-heart"></i>
-                </button>
+          </a>
+          <a href="menu_enchanted.html" class="card">
+            <img
+              src="./public/img/restaurants/restaurant_enchanted.jpg"
+              alt="Assiette La note enchantée"
+            />
+            <div class="card__desc">
+              <div class="card__desc__content">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+              </div>
+              <div class="heart-btn">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
               </div>
             </div>
-            <div class="card">
-              <a href="menu_french.html">
-                <img
-                src="./public/img/restaurants/restaurant_french.jpg"
-                alt="Assiette À la française"
-                />
-              </a>
-              <div class="card__desc">
-                <div class="card__desc__content">
-                  <h3>À la française</h3>
-                  <p>Cité Rouge</p>
-                </div>
-                <button class="heart-btn">
-                  <i class="far fa-heart"></i>
-                  <i class="fas fa-heart"></i>
-                </button>
+          </a>
+          <a href="menu_french.html" class="card">
+            <img
+              src="./public/img/restaurants/restaurant_french.jpg"
+              alt="Assiette À la française"
+            />
+            <div class="card__desc">
+              <div class="card__desc__content">
+                <h3>À la française</h3>
+                <p>Cité Rouge</p>
+              </div>
+              <div class="heart-btn">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
               </div>
             </div>
-            <div class="card">
-              <a href="menu_delight.html">
-                <img
-                src="./public/img/restaurants/restaurant_delight.jpg"
-                alt="Assiette Le délice des sens"
-                />
-              </a>
-              <div class="card__desc">
-                <div class="card__desc__content">
-                  <h3>Le délice des sens</h3>
-                  <p>Folie-Méricourt</p>
-                </div>
-                <button class="heart-btn">
-                  <i class="far fa-heart"></i>
-                  <i class="fas fa-heart"></i>
-                </button>
+          </a>
+          <a href="menu_delight.html" class="card">
+            <img
+              src="./public/img/restaurants/restaurant_delight.jpg"
+              alt="Assiette Le délice des sens"
+            />
+            <div class="card__desc">
+              <div class="card__desc__content">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div>
+              <div class="heart-btn">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
               </div>
             </div>
-          </nav>
+          </a>
+        </nav>
       </section>
+      <div class="loading">
+        <div class="loading__container">
+          <div class="spinner">
+            <div class="spinner__outer-ring"></div>
+            <div class="spinner__inner-ring"></div>
+            <div class="spinner__inner-ring"></div>
+            <div class="spinner__inner-ring"></div>
+            <div class="spinner__inner-ring"></div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-        <img src="./public/img/logo/ohmyfood.png" alt="Logo blanc Ohmyfood" class="logo logo--footer">
-        <ul class="footer__list">
-            <li>
-                <a href="#" class="footer__list__link">
-                    <i class="fas fa-cutlery"></i>
-                    <p>Proposer un restaurant</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="footer__list__link">
-                    <i class="fas fa-handshake-angle"></i>
-                    <p>Devenir partenaire</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="footer__list__link">
-                    <p>Mentions légales</p>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:s-syrichko@protonmail.com" class="footer__list__link">
-                    <p>Contact</p>
-                </a>
-            </li>
-        </ul>
+      <img
+        src="./public/img/logo/ohmyfood.png"
+        alt="Logo blanc Ohmyfood"
+        class="logo logo--footer"
+      />
+      <ul class="footer__list">
+        <li>
+          <a href="#" class="footer__list__link">
+            <i class="fas fa-cutlery"></i>
+            <p>Proposer un restaurant</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__list__link">
+            <i class="fas fa-handshake-angle"></i>
+            <p>Devenir partenaire</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__list__link">
+            <p>Mentions légales</p>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:s-syrichko@protonmail.com" class="footer__list__link">
+            <p>Contact</p>
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
