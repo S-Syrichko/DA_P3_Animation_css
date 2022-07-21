@@ -24,12 +24,13 @@
     margin: 2rem 5%;
   }
   &__list {
+    width: 90%;
     align-self: center;
     counter-reset: ol-counter;
     li {
       display: flex;
       align-items: center;
-      padding: 1rem 2rem 1rem 0.5rem;
+      padding: 1rem 1rem 1rem 0.5rem;
       margin: 0 1rem 2rem 1rem;
       border-radius: 1rem;
       background-color: $background-color2;

@@ -7,7 +7,7 @@
   }
 }
 @keyframes spinner-opacity {
-  0%{
+  0% {
     opacity: 1;
     z-index: 2;
   }
@@ -44,15 +44,17 @@
   }
 }
 @keyframes meal-loading {
-    0% {        
-        opacity: 0;
-    }
-    50% {
-        transform: translateY(5%);
-    }
-    75% {
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+    transform: translateY(5%);
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
