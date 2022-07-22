@@ -13,6 +13,9 @@
     font-size: 1.1rem;
     font-weight: bold;
   }
+  @include display-desktop {
+    margin: $desktop-margin;
+  }
 }
 .instructions {
   @include flex-column-nowrap;
@@ -55,6 +58,7 @@
       }
       p {
         font-weight: bold;
+        padding-right: 2rem;
       }
       &:hover {
         background-color: $background-color3;
@@ -64,11 +68,14 @@
       }
     }
   }
-  @include display-desktop {
+  @include display-tablet {
     &__list {
       display: flex;
       justify-content: space-evenly;
     }
+  }
+  @include display-desktop {
+    margin: $desktop-margin;
   }
 }
 .restaurant {
@@ -81,20 +88,18 @@
   }
   &__list {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    flex-wrap: wrap;
   }
   @include display-tablet {
     &__list {
       padding: 0 1rem;
-      flex-flow: row wrap;
       justify-content: space-around;
       align-content: space-between;
     }
   }
   @include display-desktop {
+    margin: $desktop-margin;
     border-radius: 2rem 2rem 0 0;
     box-shadow: box-shadow($shadow-color1);
-    
   }
 }

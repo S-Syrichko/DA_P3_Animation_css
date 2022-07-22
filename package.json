@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "index": "sass --watch ./sass/index.scss:./public/css/index.css --style compressed",
-    "index_prefix": "postcss ./public/css/index.css --use autoprefixer -d ./public/css/prefixed/",
-    "menu": "sass --watch ./sass/menu.scss:./public/css/menu.css --style compressed",
-    "menu_prefix": "postcss ./public/css/menu.css --use autoprefixer -d ./public/css/prefixed/",
-    "sass": "concurrently --kill-others \"npm run index\" \"npm run menu\"",
-    "prefix": "concurrently \"npm run index_prefix\" \"npm run menu_prefix\""
+    "index-sass": "sass --watch ./sass/index.scss:./public/css/index.css --style compressed",
+    "index-prefix": "postcss ./public/css/index.css --use autoprefixer -d ./public/css/prefixed/ --watch",
+    "menu-sass": "sass --watch ./sass/menu.scss:./public/css/menu.css --style compressed",
+    "menu-prefix": "postcss ./public/css/menu.css --use autoprefixer -d ./public/css/prefixed/ --watch",
+    "dev": "concurrently --kill-others \"npm run index-sass\" \"npm run menu-sass\" \"npm run index-prefix\" \"npm run menu-prefix\""
   },
   "author": "",
   "license": "ISC",

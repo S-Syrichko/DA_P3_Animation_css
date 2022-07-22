@@ -28,6 +28,9 @@
   @include display-desktop{
     border-radius: 0 0 2rem 2rem;
     box-shadow: box-shadow($shadow-color1);
+    &--main{
+      margin: $desktop-margin;
+    }
     img {
       min-height: 250px;
       max-height: 500px;

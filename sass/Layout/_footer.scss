@@ -3,7 +3,8 @@ footer {
     background-color: $background-color4;
     .logo {
       object-fit: cover;
-      width: 10rem;
+      width: 40%;
+      max-width: 10rem;
       filter: invert(100%);
       height: auto;
       margin-bottom: 1rem;

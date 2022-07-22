@@ -25,3 +25,7 @@
     @content;
   }
 }
+@mixin card-newTag {
+  content: "Nouveau";
+  background:$color-tertiary;
+}

@@ -12,7 +12,7 @@
   border-radius: 15px;
   animation: meal-loading 400ms both ease-in-out;
   @for $i from 1 through 5 {
-    &-#{$i} {
+    &--#{$i} {
       animation-delay: 150ms * $i;
     }
   }
@@ -25,12 +25,12 @@
     h3 {
       @include text-nowrap;
       font-size: 1.1rem;
+      height: 1.2rem;
       font-weight: bold;
       margin-bottom: .5rem;
     }
     p {
       @include text-nowrap;
-      font-size: 0.9rem;
       color: $font-color2;
     }
   }

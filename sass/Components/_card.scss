@@ -1,17 +1,18 @@
 .card {
   @include flex-column-nowrap;
-  margin: 0 .5rem 2rem .5rem;
-  min-width: 330px;
-  max-width: 500px;
+  position: relative;
+  margin: 0 0.5rem 2rem 0.5rem;
+  width: 100%;
   height: 250px;
   border-radius: 25px;
   box-shadow: 5px 5px 15px rgb(222, 220, 220);
   img {
-    width: inherit;
+    width: 100%;
     height: 70%;
     flex: 1 1 0%;
     object-fit: cover;
     overflow: hidden;
+    object-position: center 60%;
     border-radius: 25px 25px 0 0;
   }
   &__desc {
@@ -31,5 +32,22 @@
         color: $font-color2;
       }
     }
+  }
+  &:before {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: block;
+    font-size: .9rem;
+    color: darken($color-tertiary, 40%);
+    padding: 0.5rem 1rem;
+    border-radius: .1rem;
+    font-weight: bold;
+  }
+  &--new:before{
+    @include card-newTag;
+  }
+  @include display-tablet {
+    width: 45%;
   }
 }
