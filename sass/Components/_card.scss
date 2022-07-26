@@ -45,7 +45,8 @@
     font-weight: bold;
   }
   &--new:before{
-    @include card-newTag;
+    content: "Nouveau";
+    background:$color-tertiary;
   }
   @include display-tablet {
     width: 45%;

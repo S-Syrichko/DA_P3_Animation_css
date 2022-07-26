@@ -7,14 +7,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@mixin pseudo-element {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
 @mixin display-tablet {
   @media screen and (min-width: map-get($breakpoints, tablet)) {
     @content;
@@ -24,8 +16,4 @@
   @media screen and (min-width: map-get($breakpoints, desktop)) {
     @content;
   }
-}
-@mixin card-newTag {
-  content: "Nouveau";
-  background:$color-tertiary;
 }
